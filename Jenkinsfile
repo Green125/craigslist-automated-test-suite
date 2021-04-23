@@ -1,18 +1,13 @@
 pipeline {
-    agent any
+  agent any
 
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Run tests') {
-            steps {
-                echo 'We are running tests....'
-                sh "echo hello there"
-                sleep 25 // seconds
-            }
-        }
+  tools {nodejs "nodejs"}
+
+  stages {
+    stage('Example') {
+      steps {
+        sh 'npm config ls'
+      }
     }
+  }
 }
