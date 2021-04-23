@@ -10,6 +10,7 @@ pipeline {
         stage('Run tests') {
             steps {
                 echo 'We are running tests....'
+                sh "echo hello there"
                 sleep 25 // seconds
             }
         }
