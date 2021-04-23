@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Example') {
       steps {
-        sh 'npm i'
+        sh 'npm i --legacy-peer-deps'
       }
     }
   }
