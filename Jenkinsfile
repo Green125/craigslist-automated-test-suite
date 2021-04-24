@@ -6,8 +6,8 @@ pipeline {
   stages {
     stage('Addnodepackages') {
       steps {
-        // sh 'npm i --legacy-peer-deps'
-        sh 'ls -la'
+         sh 'npm i --legacy-peer-deps'
+        sh 'npm run lint'
       }
     }
   }
