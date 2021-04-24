@@ -6,13 +6,9 @@ pipeline {
   stages {
     stage('Addnodepackages') {
       steps {
-        sh 'npm i --legacy-peer-deps'
+        // sh 'npm i --legacy-peer-deps'
+        sh 'ls -la'
       }
-    }
-    stage('Linting') {
-                steps {
-                    sh 'npm install eslint'
-                }
     }
   }
 }
