@@ -4,7 +4,7 @@ pipeline {
   tools {nodejs "the-node-tool"}
 
   stages {
-    stage('AddNPM') {
+    stage('InstallNpm') {
       steps {
          sh 'npm i --legacy-peer-deps'
       }
