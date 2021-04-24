@@ -52,7 +52,8 @@ describe(
                     ACTIVITIES_TEXT_SELECTOR,
                     "activities"
                 )
-                validateLinkHref(ACTIVITIES_LINK_SELECTOR,
+                validateLinkHref(
+                    ACTIVITIES_LINK_SELECTOR,
                     "/d/activity-partners/search/act"
                 )
             }
