@@ -4,12 +4,12 @@ pipeline {
   tools {nodejs "the-node-tool"}
 
   stages {
-    stage('InstallNpm') {
+    stage('Install npm') {
       steps {
          sh 'npm i --legacy-peer-deps'
       }
     }
-    stage('RunLint'){
+    stage('Run Lint'){
       steps{
         sh 'npm run lint'
         }
