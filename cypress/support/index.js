@@ -19,7 +19,7 @@ Cypress.Server.defaults({
 
 // These cookies will not be cleared before each test runs
 Cypress.Cookies.defaults({
-  whitelist: ["cookie-name"]
+  preserve: ["cookie-name"]
 })
 
 // In case you want to disable all screenshots (useful for API testing)
